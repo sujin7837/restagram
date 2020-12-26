@@ -14,17 +14,17 @@ import javax.persistence.*;
 public class Comments extends BaseTimeEntity {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "comment_id")
     @Id
     private Long id;
 
+    @Column(length = 512)
     private String content;
 
     @ManyToOne
-    @JoinColumn(foreignKey = @ForeignKey(name = "fk_comments_posts"))
+    @JoinColumn(name="post_id")
     private Posts post;
 
     @ManyToOne
-    @JoinColumn(foreignKey = @ForeignKey(name = "fk_comments_users"))
-    private Users author;
+    @JoinColumn(name ="user_id")
+    private Users user;
 }
