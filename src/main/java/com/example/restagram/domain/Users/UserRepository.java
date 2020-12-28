@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package com.example.restagram.domain.Users;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
