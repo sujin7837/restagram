@@ -32,6 +32,9 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.projectlombok:lombok'
     compile 'com.h2database:h2'
+ 	compile 'org.springframework.security:spring-security-web'
+    compile 'org.springframework.security:spring-security-config'
+    
     annotationProcessor 'org.projectlombok:lombok'
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 

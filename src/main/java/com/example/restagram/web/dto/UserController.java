@@ -1,6 +1,7 @@
-package com.example.demo.controller;
+package com.example.restagram.web.dto;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,8 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.demo.dto.User;
-import com.example.demo.dto.UserRepository;
+import com.example.restagram.domain.Users.UserRepository;
 
 
 @Controller
