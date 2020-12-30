@@ -36,7 +36,7 @@ public class InstaUserDetails implements UserDetails{
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
-		return null;
+		return user.getName();
 	}
 
 	//사용자 계정이 만료되지 않았는지 리턴
